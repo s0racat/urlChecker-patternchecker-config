@@ -235,5 +235,11 @@
     "regex": "^(?!.*(atchive\\.))(.*)",
     "replacement": "https:\/\/web.archive.org\/web\/$2",
     "enabled": "true"
+  },
+   "Nitter to Twitter": {
+    "regex": "^https:\/\/nitter.(?:garudalinux.org|net)\/(.*)",
+    "replacement": "https:\/\/twitter.com\/$1",
+    "enabled": "true",
+    "automatic": "true"
   }
 }
