@@ -236,9 +236,15 @@
     "replacement": "https:\/\/web.archive.org\/web\/$2",
     "enabled": "false"
   },
-   "Nitter to Twitter": {
+  "Nitter to Twitter": {
     "regex": "^https:\/\/nitter.(?:garudalinux.org|net)\/(.*)",
     "replacement": "https:\/\/twitter.com\/$1",
+    "enabled": "true",
+    "automatic": "true"
+  },
+  "sp.nicovideo.jp to nicovideo.jp": {
+    "regex": "^https:\/\/sp.nicovideo.jp\/(.*)",
+    "replacement": "https:\/\/nicovideo.jp\/$1",
     "enabled": "true",
     "automatic": "true"
   }
