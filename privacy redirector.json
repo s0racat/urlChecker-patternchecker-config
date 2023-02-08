@@ -237,14 +237,16 @@
     "enabled": "false"
   },
   "Nitter to Twitter": {
+    "Comments": "Replace nitter url to twitter url, You can use it when you can't open a nitter url in fritter etc.",
     "regex": "^https:\/\/nitter.(?:garudalinux.org|net)\/(.*)",
     "replacement": "https:\/\/twitter.com\/$1",
     "enabled": "true",
     "automatic": "true"
   },
-  "sp.nicovideo.jp to nicovideo.jp": {
+  "sp.nicovideo.jp to www.nicovideo.jp": {
+    "Comments": "Replace mobile page to pc page, You can use it when you share with twitter etc.",
     "regex": "^https:\/\/sp.nicovideo.jp\/(.*)",
-    "replacement": "https:\/\/nicovideo.jp\/$1",
+    "replacement": "https:\/\/www.nicovideo.jp\/$1",
     "enabled": "true",
     "automatic": "true"
   }
