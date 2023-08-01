@@ -57,7 +57,7 @@
   },
   "Twitter to Nitter": {
     "regex": "^https?:\\\/\\\/(www\\.|mobile\\.)?twitter\\.com\\\/(.*)",
-    "replacement": "https:\/\/nitter.net\/$1",
+    "replacement": "https:\/\/nitter.net\/$2",
     "enabled": "true",
     "automatic": "true"
   },
