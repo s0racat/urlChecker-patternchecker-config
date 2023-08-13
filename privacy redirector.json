@@ -79,12 +79,12 @@
     "regex": "^https?:\\\/\\\/((www\\.|mobile\\.|vx|fx)?twitter\\.com|x\\.com)\\\/(.*)",
     "replacement": "https:\/\/nitter.net\/$3",
     "enabled": "true",
-    "automatic": "true"
+    "automatic": "false"
   },
     "Nitter to Twitter": {
     "Comments": "Replace nitter url to twitter url, You can use it when you can't open a nitter url in fritter etc.",
     "regex": "^https?:\\\/\\\/nitter\\.(?:garudalinux\\.org|net)\\\/(.*)",
     "replacement": "https:\/\/twitter.com\/$1",
-    "enabled": "false"
+    "enabled": "true"
   }
 }
