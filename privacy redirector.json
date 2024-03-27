@@ -75,16 +75,16 @@
     "enabled": "true",
     "automatic": "true"
   },
-    "Twitter to Nitter": {
-    "regex": "^https?:\\\/\\\/((www\\.|mobile\\.|vx|fx)?twitter\\.com|x\\.com)\\\/(.*)",
-    "replacement": "https:\/\/nitter.net\/$3",
-    "enabled": "true",
-    "automatic": "false"
-  },
-    "Nitter to Twitter": {
-    "Comments": "Replace nitter url to twitter url, You can use it when you can't open a nitter url in fritter etc.",
-    "regex": "^https?:\\\/\\\/nitter\\.(?:garudalinux\\.org|net)\\\/(.*)",
+  "FixTweet to twitter.com": {
+    "regex": "^https:\/\/(?:mobile.twitter|(?:[fv]xtwitter|x)).com\/(.*)",
     "replacement": "https:\/\/twitter.com\/$1",
+    "enabled": "true",
+    "automatic": "true"
+  },
+  "Twitter to YJ Realtime Search": {
+    "Comments": "Replace twitter url to Yahoo Japan Realtime Search url",
+    "regex": "https:\/\/twitter.com\/[A-Za-z0-9_]+\/status\/([0-9]+)",
+    "replacement": "https:\/\/search.yahoo.co.jp\/realtime\/search\/tweet\/$1",
     "enabled": "true"
   }
 }
