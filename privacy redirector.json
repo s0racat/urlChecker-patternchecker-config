@@ -81,10 +81,16 @@
     "enabled": "true",
     "automatic": "true"
   },
-  "Twitter to YJ Realtime Search": {
+  "Twitter to YJ Realtime Search (Tweet)": {
     "Comments": "Replace twitter url to Yahoo Japan Realtime Search url",
     "regex": "https:\/\/twitter.com\/[A-Za-z0-9_]+\/status\/([0-9]+)",
     "replacement": "https:\/\/search.yahoo.co.jp\/realtime\/search\/tweet\/$1",
+    "enabled": "true"
+  },
+  "Twitter to YJ Realtime Search (User)": {
+    "Comments": "Replace twitter url to Yahoo Japan Realtime Search url",
+    "regex": "https:\/\/twitter.com\/([A-Za-z0-9_]+)",
+    "replacement": "https:\/\/search.yahoo.co.jp\/realtime\/search?p=ID%3A$1",
     "enabled": "true"
   }
 }
