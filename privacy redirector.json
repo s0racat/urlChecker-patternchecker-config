@@ -92,5 +92,11 @@
     "regex": "^https?:\/\/twitter.com\/(?:#!\/)?(\\w+)$",
     "replacement": "https:\/\/search.yahoo.co.jp\/realtime\/search?p=ID%3A$1",
     "enabled": "true"
+  },
+  "proxy it with archive.org": {
+    "regex1": "^(https?):\\\/\\\/([\\s\\S]*)$",
+    "regex": "^(?!.*(archive\\.))(.*)",
+    "replacement": "https:\/\/web.archive.org\/web\/$2",
+    "enabled": "true"
   }
 }
