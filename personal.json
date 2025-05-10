@@ -1,0 +1,114 @@
+{
+  "Warning! Non ascii characters found": {
+    "regex": ".*[^\\p{ASCII}].*",
+    "enabled": "true"
+  },
+  "Http link, consider using https": {
+    "regex": "^http:\/\/(?!.*\\.(onion|i2p|bit|ano|loki)\/?)",
+    "replacement": "https:\/\/",
+    "exceptions": "http:\/\/([a-z0-9-])*?.(onion|i2p|bit|ano|loki)\/",
+    "Comments": "explanation to exceptions onion for tor, i2p for i2p, loki for lokinet, ano for anonet, bit for zeronet",
+    "enabled": "true",
+    "automatic": "false"
+  },
+  "Missing http scheme.": {
+    "regex": "^(?!.*:).*",
+    "replacement": "http:\/\/$0",
+    "enabled": "true"
+  },
+  "Missing https scheme.": {
+    "regex": "^(?!.*:).*",
+    "replacement": "https:\/\/$0",
+    "enabled": "true"
+  },
+  "redirect to next URL": {
+    "regex": "(?:(.*))url=(.*)",
+    "replacement": "$2",
+    "enabled": "true"
+  },
+  "fix strings1": {
+    "regex": "%2F",
+    "replacement": "\/",
+    "automatic": "true",
+    "enabled": "true"
+  },
+  "fix string2": {
+    "regex": "%3A",
+    "replacement": ":",
+    "automatic": "true",
+    "enabled": "true"
+  },
+  "tinyurl": {
+    "regex": "^https?:\\\/\\\/tinyurl\\.com\\\/(.*)",
+    "replacement": "https:\/\/preview.tinyurl.com\/$1",
+    "enabled": "true"
+  },
+  "goo.gl & bit.ly": {
+    "regex": "^https?:\\\/\\\/(goo\\.gl|bit\\.ly|j\\.mp|nyti\\.us)\\\/([0-9a-zA-Z]*)(?!\\+)$",
+    "replacement": "https:\/\/$1\/$2+",
+    "enabled": "true"
+  },
+  "isgd": {
+    "regex": "^https?:\\\/\\\/is\\.gd\\\/([0-9a-zA-Z]*)(?!\\-)$",
+    "replacement": "https:\/\/is.gd\/$1-",
+    "enabled": "true"
+  },
+  "tinycc": {
+    "regex": "^https?:\\\/\\\/tiny\\.cc\\\/([0-9a-zA-Z]*)(?!\\~)$",
+    "replacement": "https:\/\/tiny.cc\/$1~",
+    "enabled": "true"
+  },
+  "curtly": {
+    "regex": "^https?:\\\/\\\/curt\\.ly\\\/([0-9a-zA-Z]*)(?!\\@)$",
+    "replacement": "https:\/\/curt.ly\/$1@",
+    "enabled": "true"
+  },
+  "bit.do": {
+    "regex": "^https?:\\\/\\\/bit\\.do\\\/(?!expand\\\/)([0-9a-zA-Z]*)",
+    "replacement": "https:\/\/curt.ly\/$1@",
+    "enabled": "true"
+  },
+  "sp.nicovideo.jp to www.nicovideo.jp": {
+    "Comments": "Replace mobile page to PC page, You can use it when you share with twitter etc.",
+    "regex": "^https?:\\\/\\\/sp\\.nicovideo\\.jp\\\/(.*)",
+    "replacement": "https:\/\/www.nicovideo.jp\/$1",
+    "enabled": "true",
+    "automatic": "true"
+  },
+  "FixTweet to twitter.com": {
+    "regex": "^https:\/\/(?:mobile.twitter|(?:[fv]xtwitter)).com\/(.*)",
+    "replacement": "https:\/\/x.com\/$1",
+    "enabled": "true",
+    "automatic": "true"
+  },
+  "Twitter to YJ Realtime Search (Tweet)": {
+    "Comments": "Replace twitter url to Yahoo Japan Realtime Search url",
+    "regex": "https?:\/\/x.com\/\\w+\/status\/(\\d+)",
+    "replacement": "https:\/\/search.yahoo.co.jp\/realtime\/search\/tweet\/$1",
+    "enabled": "true"
+  },
+  "Twitter to YJ Realtime Search (User)": {
+    "Comments": "Replace twitter url to Yahoo Japan Realtime Search url",
+    "regex": "^https?:\/\/x.com\/(?:#!\/)?(\\w+)$",
+    "replacement": "https:\/\/search.yahoo.co.jp\/realtime\/search?p=ID%3A$1",
+    "enabled": "true"
+  },
+  "Twitter to nitter.net": {
+    "Comments": "Replace twitter url to nitter url",
+    "regex": "^https?:\/\/x.com\/(.*)$",
+    "replacement": "https:\/\/nitter.net\/$1",
+    "enabled": "true"
+  },
+  "proxy it with archive.org": {
+    "regex1": "^(https?):\\\/\\\/([\\s\\S]*)$",
+    "regex": "^(?!.*(archive\\.))(.*)",
+    "replacement": "https:\/\/web.archive.org\/web\/$2",
+    "enabled": "true"
+  },
+  "amazon shorten url": {
+    "regex": "https:\/\/www.amazon.co.jp\/.*\/dp\/([A-Z0-9]+).*",
+    "replacement": "https:\/\/www.amazon.co.jp\/dp\/$1",
+    "enabled": "true",
+    "automatic": "true"
+  }
+}
