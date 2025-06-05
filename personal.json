@@ -98,11 +98,17 @@
     "replacement": "https:\/\/nitter.net\/$1",
     "enabled": "true"
   },
-  "piped.video to youtu.be": {
-    "regex": "^https?:\/\/piped.video\/(.*)$",
-    "replacement": "https:\/\/youtu.be\/$1",
-    "automatic": "true",
-    "enabled": "true"
+  "piped.video live to YouTube live": {
+    "regex": "^https?:\/\/piped.video\/live\/(.*+)$",
+    "replacement": "https:\/\/www.youtube.com\/live\/$1",
+    "enabled": "true",
+    "automatic": "true"
+  },
+  "piped.video to YouTube watch": {
+    "regex": "^https?:\\\/\\\/piped\\.video\\\/(.*+)$",
+    "replacement": "https:\/\/www.youtube.com\/watch?v=$1",
+    "enabled": "true",
+    "automatic": "true"
   },
   "proxy it with archive.org": {
     "regex1": "^(https?):\\\/\\\/([\\s\\S]*)$",
